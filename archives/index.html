@@ -1,110 +1,86 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | Hexo</title>
-
+  <title>archive_a | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
   
-  <meta name="author" content="John Doe">
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
-
   
-
   
-
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
-
-  <meta property="og:site_name" content="Hexo"/>
-
+  <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="/lib/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/lib/jquery/dist/jquery.min.js"></script>
   
-  <meta property="og:image" content="/favicon.ico"/>
   
-
-  <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+  
 </head>
-
-
 <body>
-<div class="blog">
-  <div class="content">
-
-    <header>
-  <div class="site-branding">
-    <h1 class="site-title">
-      <a href="/">Hexo</a>
-    </h1>
-    <p class="site-description"></p>
-  </div>
-  <nav class="site-navigation">
-    <ul>
+  <div id="wrapper">
+    <header id="header" class="clearfix">
+	<a id="logo" href="/" title="Hexo">Hexo</a>
+	
+	<nav id="nav-menu" class="clearfix">
+		<form id="search" method="post" action="./" role="search">
+			<input id="search-input" type="text" name="s" class="inputbox" value="Search" onfocus="if (value =='Search'){value =''}" onblur="if (value ==''){value='Search'}">
+		</form>
+		<ul>
       
-        <li><a href="/">Home</a></li>
+				
+        <li><a class="main-nav-link" href="/">Home</a></li>
       
-        <li><a href="/archives">Archives</a></li>
+				
+        <li><a class="main-nav-link" href="/archives">Archives</a></li>
       
-    </ul>
-  </nav>
+		</ul>
+	</nav>
 </header>
+    <section id="main" class="clearfix">  
 
-    <main class="site-main posts-loop">
-    
-
-<article>
-
-  <h2 class="article-title ">Archives</h2>
-
-  <div class="archive">
-    
-      <div class="post archive">
-        <div class="archive-post">
-          <time datetime="2018-06-15T07:28:12.000Z">
-            <a href="/2018/06/15/Test/">2018-06-15</a>
-          </time>
-          
-            <h3 class="archive-title"><a href="/2018/06/15/Test/"><span>Test</span></a></h3>
-          
-        </div>
-      </div>
-    
-      <div class="post archive">
-        <div class="archive-post">
-          <time datetime="2018-06-15T07:17:08.440Z">
-            <a href="/2018/06/15/hello-world/">2018-06-15</a>
-          </time>
-          
-            <h3 class="archive-title"><a href="/2018/06/15/hello-world/"><span>Hello World</span></a></h3>
-          
-        </div>
-      </div>
-    
-    <nav class="pagination">
   
+    <article class="post-detail">
+      <div id="archives">
+        <h3 class="al_year">2018</h3>
+        
+          <ul class="al_mon_list">
+            <li clsss="li_mon"><span class="al_mon">5</span>
+                <ul class="al_post_list">
+                  
+                    <li><a href="/2018/06/15/Test/">Test</a></li>
+                  
+                    <li><a href="/2018/06/15/hello-world/">Hello World</a></li>
+                  
+                </ul>
+            </li>
+          </ul>
+        
+      </div>
+    </article>
   
-</nav>
-  </div>
+  </section>
+    <footer id="footer" role="contentinfo">
+    <div>&copy; 2018 <a href="/">Hexo</a>.
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Designed by <a href="http://rainylog.com" target="_blank">Rainy.</a>
+	</div>
+</footer><!-- end #footer -->
 
-</article>
-    </main>
-
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
-    </br>
-    
-    &copy; 2018 John Doe
-    
-  </p>
-</footer>
-    
   </div>
-</div>
+  <script src="/lib/fancybox/dist/jquery.fancybox.min.js"></script>
+
+  <script src="/js/helper.js"></script>
+  <script src="/js/_third-party/gitment.js"></script>
 </body>
 </html>

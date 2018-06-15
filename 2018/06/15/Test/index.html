@@ -1,123 +1,90 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   
   <title>Test | Hexo</title>
-
-  
-  <meta name="author" content="John Doe">
-  
-
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="#test it">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Test">
+<meta property="og:url" content="http://yoursite.com/2018/06/15/Test/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#test it">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-15T07:28:32.993Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Test">
+<meta name="twitter:description" content="#test it">
   
-
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-  <meta name="keywords" content="">
   
-
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  <meta property="og:title" content="Test"/>
-
-  <meta property="og:site_name" content="Hexo"/>
-
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
-  <meta property="og:image" content="/favicon.ico"/>
+  <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="/lib/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/lib/jquery/dist/jquery.min.js"></script>
   
-
-  <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+  
+  
 </head>
-
-
 <body>
-<div class="blog">
-  <div class="content">
-
-    <header>
-  <div class="site-branding">
-    <h1 class="site-title">
-      <a href="/">Hexo</a>
-    </h1>
-    <p class="site-description"></p>
-  </div>
-  <nav class="site-navigation">
-    <ul>
+  <div id="wrapper">
+    <header id="header" class="clearfix">
+	<a id="logo" href="/" title="Hexo">Hexo</a>
+	
+	<nav id="nav-menu" class="clearfix">
+		<form id="search" method="post" action="./" role="search">
+			<input id="search-input" type="text" name="s" class="inputbox" value="Search" onfocus="if (value =='Search'){value =''}" onblur="if (value ==''){value='Search'}">
+		</form>
+		<ul>
       
-        <li><a href="/">Home</a></li>
+				
+        <li><a class="main-nav-link" href="/">Home</a></li>
       
-        <li><a href="/archives">Archives</a></li>
+				
+        <li><a class="main-nav-link" href="/archives">Archives</a></li>
       
-    </ul>
-  </nav>
+		</ul>
+	</nav>
 </header>
-
-    <main class="site-main posts-loop">
-    <article>
-
+    <section id="main" class="clearfix"><article class="post-detail">
+  <h1 class="post-title"><a href="/">Test</a></h1>
+  <ul class="post-meta">
+  <li><i class="fa fa-user"></i> Author John Doe</li>
+  <li><i class="fa fa-calendar"></i> Date Jun 15</li>
+  <li><i class="fa fa-folder"></i> Categories
   
-    
-    <h3 class="article-title"><span>Test</span></h3>
-    
+    no_categories
   
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2018/06/15/Test/" rel="bookmark">
-        <time class="entry-date published" datetime="2018-06-15T07:28:12.000Z">
-          2018-06-15
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
+  </li>
+</ul>
+  <div class="post-content">
       
-        <p>#test it</p>
-
-      
-    </div>
+      <p>#test it</p>
 
   </div>
+  
 
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
 </article>
 
+<!-- Comments -->
 
-    </main>
+<!-- End Comments --></section>
+    <footer id="footer" role="contentinfo">
+    <div>&copy; 2018 <a href="/">Hexo</a>.
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Designed by <a href="http://rainylog.com" target="_blank">Rainy.</a>
+	</div>
+</footer><!-- end #footer -->
 
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
-    </br>
-    
-    &copy; 2018 John Doe
-    
-  </p>
-</footer>
-    
   </div>
-</div>
+  <script src="/lib/fancybox/dist/jquery.fancybox.min.js"></script>
+
+  <script src="/js/helper.js"></script>
+  <script src="/js/_third-party/gitment.js"></script>
 </body>
 </html>
