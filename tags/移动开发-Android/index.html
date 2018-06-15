@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   
-  <title>一个靠谱的人的博客</title>
+  <title>tag: 移动开发 Android | 一个靠谱的人的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="一个靠谱的人的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/移动开发-Android/index.html">
 <meta property="og:site_name" content="一个靠谱的人的博客">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
@@ -49,47 +49,26 @@
 	</nav>
 </header>
     <section id="main" class="clearfix">
-  <article class="post">
-      
-        
-          <h1><a href="/2018/06/15/安卓学习之Activity/">安卓学习之Activity</a></h1>
-        
-      
-      <div class="post-content ">
-        
+  <article class="post-detail">
+    <h1 class="post-title"><a href="/">安卓学习之Activity</a></h1>
+    <ul class="post-meta">
+  <li><i class="fa fa-user"></i> 作者 一个靠谱的人</li>
+  <li><i class="fa fa-calendar"></i> 日期 Jun 15</li>
+  <li><i class="fa fa-folder"></i> 分类
   
-
-
-
-
-        <h1 id="Activity"><a href="#Activity" class="headerlink" title="Activity"></a>Activity</h1><h2 id="Activity的生命周期"><a href="#Activity的生命周期" class="headerlink" title="Activity的生命周期"></a>Activity的生命周期</h2><p>这是一个Activity的创建以及销毁的过程：<br><img src="activity_1.png" alt="Activity 生命周期"></p>
+    no_categories
+  
+  </li>
+</ul>
+    <div class="post-content">
+      <h1 id="Activity"><a href="#Activity" class="headerlink" title="Activity"></a>Activity</h1><h2 id="Activity的生命周期"><a href="#Activity的生命周期" class="headerlink" title="Activity的生命周期"></a>Activity的生命周期</h2><p>这是一个Activity的创建以及销毁的过程：<br><img src="activity_1.png" alt="Activity 生命周期"></p>
 <p>在上面的图中可以很清晰地看到其生命周期为onCreate() –&gt; onStart() –&gt;onResume() –&gt; onPause() –&gt; onStop() –&gt; onDestroy()</p>
 <p>一个Activity是上述的生命周期，但是也很难看出来具体的每个函数合适调用，所以我们写两个Activity来看一看具体的生命周期是如何：<br><img src="activity_2.png" alt="详细的情况"></p>
 <p>刚才的操作是创建Activity_a，然后在Activity_a中按下按钮进入Activity_b,看到它的生命周期是这样的 a.onCreate() –&gt; a.onStart() –&gt; a.onResume() 此时按下按钮转向Activity_b ：<br> –&gt; a.onPause() –&gt; b.onCrate() –&gt; b.onStart() –&gt; b.onResume –&gt; a.onStop()<br> 此时再按返回键则继续的生命周期：<br> b.onPause() –&gt; a.onStart() –&gt; a.onResume() –&gt; b.onStop() –&gt; b.onDestroy()</p>
 <p> 由此可以有以下分析：<br> onCreate() 函数只在Activity第一次创建的时候调用，onPause() 在另一个Activity变成焦点但是本身还可见时调用，onStop() 在自身不可见时调用，onDestory()在自身被销毁时调用，onStart()在Activity变成焦点时调用，onResume()调用后Activity变得可见。</p>
 <p> 为了描述的更加清楚，使用一张图片来展示：<br> <img src="activity_3.png" alt="生命周期"></p>
 
-      </div>
-  </article>
-
-  <article class="post">
-      
-        
-          <h1><a href="/2018/06/15/Test/">Test</a></h1>
-        
-      
-      <div class="post-content ">
-        
-  
-
-
-
-
-        <p>#test it</p>
-<p>图片测试</p>
-<p><img src="blog_1.jpg" alt="图片"></p>
-
-      </div>
+    </div>
   </article>
 
 
